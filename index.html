@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            background-color: rgb(30, 30, 67);
+            color: white;
+            text-align: center;
+            height:5rem;
+            line-height:5rem ;
+        }
+        .choice{
+            height: 100px;
+            width:100px;
+            border-radius: 50%;
+        }
+        img{
+            height: 100px;
+            width:100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .choices{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            margin-top: 5%;
+            
+        }
+        .choice:hover{
+            opacity: 50%;
+            cursor:pointer;
+            border: 3px solid rgb(33, 36, 55);
+        }
+        .score-board{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin-top: 10%;
+            gap: 10rem;
+
+        }
+        #user{
+            font-size: 3rem;
+            
+        }
+        #comp{
+            font-size: 3rem;
+        }
+        .message{
+            margin-top: 5rem;
+        }
+        #msg{
+            background-color: rgb(30, 30, 67);
+            color: aliceblue;
+            font-size: 2rem;
+            text-align: center;
+            align-items: center;
+            display: inline;
+            margin-left: 41%;
+            padding: 10px;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Rock-Paper-Scissor</h1>
+    <div class="choices" id="rock">
+        <div class="choice" id="rock">
+            <img src="rock.jpg">
+        </div>
+        <div class="choice" id="paper">
+            <img src="paper.jpg">
+        </div>
+        <div class="choice" id="scissor">
+            <img src="scissor.jpg">
+        </div>
+    </div>
+
+    <div class="score-board">
+        <div class="score">
+            <p>You</p>
+            <p id="user">0</p>
+        </div>
+        <div class="score">
+            <p>Computer</p>
+            <p id="comp">0</p>
+        </div>
+    </div>
+
+    <div class="message">
+        <p id="msg">Play your move</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
